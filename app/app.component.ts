@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
             <twoWayBinding-comp></twoWayBinding-comp>
             <attrDirectives-comp></attrDirectives-comp>
             <inputsOutputs-comp></inputsOutputs-comp>
+            <pipes-comp></pipes-comp>
             `
 })
 

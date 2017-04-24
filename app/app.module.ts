@@ -8,11 +8,13 @@ import { TutorialsComponent }         from './tutorials.component';
 import { TwoWayBindingComponent }     from './twoWayBinding.component';
 import { AttrDirectivesComponent }    from './attrDirectives.component';
 import { InputsOutputsComponent }     from './inputsOutputs.component';
-import { InputOutputChildComponent }     from './inputOutputChild.component';
+import { InputOutputChildComponent }  from './inputOutputChild.component';
+import { PipesComponent }             from './pipes.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, CommonModule ],
-  declarations: [ AppComponent, TutorialsComponent, TwoWayBindingComponent, AttrDirectivesComponent, InputsOutputsComponent, InputOutputChildComponent ],
+  declarations: [ AppComponent, TutorialsComponent, TwoWayBindingComponent, AttrDirectivesComponent, InputsOutputsComponent, InputOutputChildComponent,
+                  PipesComponent ],
   bootstrap:    [ AppComponent ]
 })
 
