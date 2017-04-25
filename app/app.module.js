@@ -17,6 +17,7 @@ var attrDirectives_component_1 = require("./attrDirectives.component");
 var inputsOutputs_component_1 = require("./inputsOutputs.component");
 var inputOutputChild_component_1 = require("./inputOutputChild.component");
 var pipes_component_1 = require("./pipes.component");
+var drivenForms_component_1 = require("./drivenForms.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,7 +27,7 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, common_1.CommonModule],
         declarations: [app_component_1.AppComponent, tutorials_component_1.TutorialsComponent, twoWayBinding_component_1.TwoWayBindingComponent, attrDirectives_component_1.AttrDirectivesComponent, inputsOutputs_component_1.InputsOutputsComponent, inputOutputChild_component_1.InputOutputChildComponent,
-            pipes_component_1.PipesComponent],
+            pipes_component_1.PipesComponent, drivenForms_component_1.DrivenFormsComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

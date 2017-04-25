@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
             <attrDirectives-comp></attrDirectives-comp>
             <inputsOutputs-comp></inputsOutputs-comp>
             <pipes-comp></pipes-comp>
+            <drivenForms-comp></drivenForms-comp>
             `
 })
 

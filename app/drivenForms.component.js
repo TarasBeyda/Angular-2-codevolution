@@ -7,16 +7,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var DrivenFormsComponent = (function () {
+    function DrivenFormsComponent() {
+        this.myName = 'Taras';
     }
-    return AppComponent;
+    DrivenFormsComponent.prototype.onSubmit = function (value) {
+        console.log(value);
+    };
+    return DrivenFormsComponent;
 }());
-AppComponent = __decorate([
+DrivenFormsComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "\n            <h1>Hello World</h1>\n            <tutorials-comp></tutorials-comp>\n            <twoWayBinding-comp></twoWayBinding-comp>\n            <attrDirectives-comp></attrDirectives-comp>\n            <inputsOutputs-comp></inputsOutputs-comp>\n            <pipes-comp></pipes-comp>\n            <drivenForms-comp></drivenForms-comp>\n            "
+        selector: 'drivenForms-comp',
+        templateUrl: "app/templates/drivenForms.component.html"
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], DrivenFormsComponent);
+exports.DrivenFormsComponent = DrivenFormsComponent;
+//# sourceMappingURL=drivenForms.component.js.map

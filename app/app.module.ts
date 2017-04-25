@@ -11,10 +11,12 @@ import { InputsOutputsComponent }     from './inputsOutputs.component';
 import { InputOutputChildComponent }  from './inputOutputChild.component';
 import { PipesComponent }             from './pipes.component';
 
+import { DrivenFormsComponent }       from './drivenForms.component';
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule, CommonModule ],
   declarations: [ AppComponent, TutorialsComponent, TwoWayBindingComponent, AttrDirectivesComponent, InputsOutputsComponent, InputOutputChildComponent,
-                  PipesComponent ],
+                  PipesComponent, DrivenFormsComponent ],
   bootstrap:    [ AppComponent ]
 })
 
