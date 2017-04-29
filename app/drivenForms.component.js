@@ -19,7 +19,8 @@ var DrivenFormsComponent = (function () {
 DrivenFormsComponent = __decorate([
     core_1.Component({
         selector: 'drivenForms-comp',
-        templateUrl: "app/templates/drivenForms.component.html"
+        templateUrl: "app/templates/drivenForms.component.html",
+        styles: ["\n                input.ng-invalid {\n                    border-left: 5px solid red;\n                }\n                input.ng-valid {\n                    border-left: 5px solid green;\n                }\n            "]
     })
 ], DrivenFormsComponent);
 exports.DrivenFormsComponent = DrivenFormsComponent;

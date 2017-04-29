@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
             <inputsOutputs-comp></inputsOutputs-comp>
             <pipes-comp></pipes-comp>
             <drivenForms-comp></drivenForms-comp>
+            <modelDrivenForms-comp></modelDrivenForms-comp>
             `
 })
 
