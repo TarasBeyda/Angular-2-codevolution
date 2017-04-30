@@ -3,6 +3,7 @@ import { BrowserModule }              from '@angular/platform-browser';
 import { CommonModule }               from '@angular/common';
 import { FormsModule }                from '@angular/forms';
 import { ReactiveFormsModule }        from '@angular/forms';
+import { HttpModule }                 from '@angular/http';
 
 import { AppComponent }               from './app.component';
 import { TutorialsComponent }         from './tutorials.component';
@@ -15,10 +16,13 @@ import { PipesComponent }             from './pipes.component';
 import { DrivenFormsComponent }       from './drivenForms.component';
 import { ModelDrivenFormsComponent }  from './modelDrivenForms.component';
 
+import { ServiceListComponent }           from './serviceList.component';
+import { ServiceListDetailComponent }     from './serviceListDetail.component';
+
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, CommonModule, ReactiveFormsModule ],
+  imports:      [ BrowserModule, FormsModule, CommonModule, ReactiveFormsModule, HttpModule ],
   declarations: [ AppComponent, TutorialsComponent, TwoWayBindingComponent, AttrDirectivesComponent, InputsOutputsComponent, InputOutputChildComponent,
-                  PipesComponent, DrivenFormsComponent, ModelDrivenFormsComponent ],
+                  PipesComponent, DrivenFormsComponent, ModelDrivenFormsComponent, ServiceListComponent, ServiceListDetailComponent ],
   bootstrap:    [ AppComponent ]
 })
 

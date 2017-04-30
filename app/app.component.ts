@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { ListService } from './services/serviceList.service';
+
 @Component({
   selector: 'my-app',
   template: `
@@ -11,7 +13,10 @@ import { Component } from '@angular/core';
             <pipes-comp></pipes-comp>
             <drivenForms-comp></drivenForms-comp>
             <modelDrivenForms-comp></modelDrivenForms-comp>
-            `
+            <serviceList-comp></serviceList-comp>
+            <serviceListDetail-comp></serviceListDetail-comp>
+            `,
+  providers: [ListService]
 })
 
 export class AppComponent { }
