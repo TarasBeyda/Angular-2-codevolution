@@ -6,6 +6,7 @@ import { ListService } from './services/serviceList.service';
     selector: 'serviceList-comp',
     template: `
                     <h2>Employee list</h2>
+                    <h3>{{errorMsg}}</h3>
                     <ul *ngFor="let employee of employees">
                         <li>{{employee.name}}</li>
                     </ul>
@@ -14,10 +15,12 @@ import { ListService } from './services/serviceList.service';
 
 export class ServiceListComponent implements OnInit{
     employees = [];
+    errorMsg: string;
 
     constructor(private _listService: ListService){}
     ngOnInit() {
         this._listService.getEmployees()
-            .subscribe(resEmployeeData => this.employees = resEmployeeData);
+            .subscribe(resEmployeeData => this.employees = resEmployeeData,
+                       resEmployeeError => this.errorMsg = resEmployeeError);
     }
 }

@@ -16,7 +16,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n            <h1>Hello World</h1>\n            <tutorials-comp></tutorials-comp>\n            <twoWayBinding-comp></twoWayBinding-comp>\n            <attrDirectives-comp></attrDirectives-comp>\n            <inputsOutputs-comp></inputsOutputs-comp>\n            <pipes-comp></pipes-comp>\n            <drivenForms-comp></drivenForms-comp>\n            <modelDrivenForms-comp></modelDrivenForms-comp>\n            <serviceList-comp></serviceList-comp>\n            <serviceListDetail-comp></serviceListDetail-comp>\n            ",
+        template: "\n            <h1>Hello World</h1>\n            <tutorials-comp></tutorials-comp>\n            <twoWayBinding-comp></twoWayBinding-comp>\n            <attrDirectives-comp></attrDirectives-comp>\n            <inputsOutputs-comp></inputsOutputs-comp>\n            <pipes-comp></pipes-comp>\n            <drivenForms-comp></drivenForms-comp>\n            <modelDrivenForms-comp></modelDrivenForms-comp>\n            <serviceList-comp></serviceList-comp>\n            <serviceListDetail-comp></serviceListDetail-comp>\n            <routingApp-comp></routingApp-comp>\n            ",
         providers: [serviceList_service_1.ListService]
     })
 ], AppComponent);

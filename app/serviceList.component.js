@@ -19,14 +19,14 @@ var ServiceListComponent = (function () {
     ServiceListComponent.prototype.ngOnInit = function () {
         var _this = this;
         this._listService.getEmployees()
-            .subscribe(function (resEmployeeData) { return _this.employees = resEmployeeData; });
+            .subscribe(function (resEmployeeData) { return _this.employees = resEmployeeData; }, function (resEmployeeError) { return _this.errorMsg = resEmployeeError; });
     };
     return ServiceListComponent;
 }());
 ServiceListComponent = __decorate([
     core_1.Component({
         selector: 'serviceList-comp',
-        template: "\n                    <h2>Employee list</h2>\n                    <ul *ngFor=\"let employee of employees\">\n                        <li>{{employee.name}}</li>\n                    </ul>\n                 "
+        template: "\n                    <h2>Employee list</h2>\n                    <h3>{{errorMsg}}</h3>\n                    <ul *ngFor=\"let employee of employees\">\n                        <li>{{employee.name}}</li>\n                    </ul>\n                 "
     }),
     __metadata("design:paramtypes", [serviceList_service_1.ListService])
 ], ServiceListComponent);

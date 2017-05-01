@@ -15,6 +15,7 @@ import { ListService } from './services/serviceList.service';
             <modelDrivenForms-comp></modelDrivenForms-comp>
             <serviceList-comp></serviceList-comp>
             <serviceListDetail-comp></serviceListDetail-comp>
+            <routingApp-comp></routingApp-comp>
             `,
   providers: [ListService]
 })

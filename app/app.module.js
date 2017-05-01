@@ -23,6 +23,11 @@ var drivenForms_component_1 = require("./drivenForms.component");
 var modelDrivenForms_component_1 = require("./modelDrivenForms.component");
 var serviceList_component_1 = require("./serviceList.component");
 var serviceListDetail_component_1 = require("./serviceListDetail.component");
+var routingApp_component_1 = require("./routingApp.component");
+// import { DepartmentListComponent } from './department-list.component';
+// import { EmployeeListComponent } from './employee-list.component'
+var app_routing_module_1 = require("./app-routing.module");
+var app_routing_module_2 = require("./app-routing.module");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -30,9 +35,17 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, common_1.CommonModule, forms_2.ReactiveFormsModule, http_1.HttpModule],
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, common_1.CommonModule, forms_2.ReactiveFormsModule, http_1.HttpModule,
+            // RouterModule.forRoot([
+            //     {path: '', component: AppComponent},
+            //     {path: 'departments', component: DepartmentListComponent},
+            //     {path: 'employees', component: EmployeeListComponent}
+            // ])
+            app_routing_module_1.AppRoutingModule],
         declarations: [app_component_1.AppComponent, tutorials_component_1.TutorialsComponent, twoWayBinding_component_1.TwoWayBindingComponent, attrDirectives_component_1.AttrDirectivesComponent, inputsOutputs_component_1.InputsOutputsComponent, inputOutputChild_component_1.InputOutputChildComponent,
-            pipes_component_1.PipesComponent, drivenForms_component_1.DrivenFormsComponent, modelDrivenForms_component_1.ModelDrivenFormsComponent, serviceList_component_1.ServiceListComponent, serviceListDetail_component_1.ServiceListDetailComponent],
+            pipes_component_1.PipesComponent, drivenForms_component_1.DrivenFormsComponent, modelDrivenForms_component_1.ModelDrivenFormsComponent, serviceList_component_1.ServiceListComponent, serviceListDetail_component_1.ServiceListDetailComponent,
+            // RoutingAppComponent, DepartmentListComponent, EmployeeListComponent
+            app_routing_module_2.routingComponents, routingApp_component_1.RoutingAppComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
