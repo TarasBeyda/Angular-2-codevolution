@@ -12,20 +12,38 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var DepartmentDetailComponent = (function () {
-    function DepartmentDetailComponent(_route) {
+    function DepartmentDetailComponent(_route, _router) {
         this._route = _route;
+        this._router = _router;
     }
+    // ngOnInit() {
+    //     let id = parseInt(this._route.snapshot.params['id']);
+    //     this.departmentId = id;
+    // }
     DepartmentDetailComponent.prototype.ngOnInit = function () {
-        var id = this._route.snapshot.params['id'];
-        this.departmentId = id;
+        var _this = this;
+        this._route.params.subscribe(function (params) {
+            var id = parseInt(params['id']);
+            _this.departmentId = id;
+        });
+    };
+    DepartmentDetailComponent.prototype.goPrevious = function () {
+        var previousId = this.departmentId - 1;
+        previousId < 1 ?
+            true : this._router.navigate(['/departments', previousId]);
+    };
+    DepartmentDetailComponent.prototype.goNext = function () {
+        var nextId = this.departmentId + 1;
+        nextId > 5 ?
+            true : this._router.navigate(['/departments', nextId]);
     };
     return DepartmentDetailComponent;
 }());
 DepartmentDetailComponent = __decorate([
     core_1.Component({
-        template: "\n                    <h3>You selected department with id = {{departmentId}}</h3>\n                 "
+        template: "\n                    <h3>You selected department with id = {{departmentId}}</h3>\n                    <a (click)=\"goPrevious();\">Previous</a>\n                    <a (click)=\"goNext();\">Next</a>\n                 "
     }),
-    __metadata("design:paramtypes", [router_1.ActivatedRoute])
+    __metadata("design:paramtypes", [router_1.ActivatedRoute, router_1.Router])
 ], DepartmentDetailComponent);
 exports.DepartmentDetailComponent = DepartmentDetailComponent;
 //# sourceMappingURL=department-detail.component.js.map
