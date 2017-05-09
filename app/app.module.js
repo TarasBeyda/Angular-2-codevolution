@@ -28,6 +28,7 @@ var routingApp_component_1 = require("./routingApp.component");
 // import { EmployeeListComponent } from './employee-list.component'
 var app_routing_module_1 = require("./app-routing.module");
 var app_routing_module_2 = require("./app-routing.module");
+var page_not_found_component_1 = require("./page-not-found-component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -45,7 +46,7 @@ AppModule = __decorate([
         declarations: [app_component_1.AppComponent, tutorials_component_1.TutorialsComponent, twoWayBinding_component_1.TwoWayBindingComponent, attrDirectives_component_1.AttrDirectivesComponent, inputsOutputs_component_1.InputsOutputsComponent, inputOutputChild_component_1.InputOutputChildComponent,
             pipes_component_1.PipesComponent, drivenForms_component_1.DrivenFormsComponent, modelDrivenForms_component_1.ModelDrivenFormsComponent, serviceList_component_1.ServiceListComponent, serviceListDetail_component_1.ServiceListDetailComponent,
             // RoutingAppComponent, DepartmentListComponent, EmployeeListComponent
-            app_routing_module_2.routingComponents, routingApp_component_1.RoutingAppComponent],
+            app_routing_module_2.routingComponents, routingApp_component_1.RoutingAppComponent, page_not_found_component_1.PageNotFoundComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

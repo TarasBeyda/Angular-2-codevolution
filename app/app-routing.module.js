@@ -8,15 +8,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var app_component_1 = require("./app.component");
 var employee_list_component_1 = require("./employee-list.component");
 var department_list_component_1 = require("./department-list.component");
 var department_detail_component_1 = require("./department-detail.component");
+var page_not_found_component_1 = require("./page-not-found-component");
 var routes = [
-    { path: '', component: app_component_1.AppComponent },
+    { path: '', redirectTo: '/departments', pathMatch: 'full' },
     { path: 'departments', component: department_list_component_1.DepartmentListComponent },
     { path: 'employees', component: employee_list_component_1.EmployeeListComponent },
-    { path: 'departments/:id', component: department_detail_component_1.DepartmentDetailComponent }
+    { path: 'departments/:id', component: department_detail_component_1.DepartmentDetailComponent },
+    { path: '**', component: page_not_found_component_1.PageNotFoundComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

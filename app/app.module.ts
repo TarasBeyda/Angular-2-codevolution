@@ -27,6 +27,8 @@ import { RoutingAppComponent } from './routingApp.component';
 import { AppRoutingModule } from './app-routing.module';
 import { routingComponents } from './app-routing.module';
 
+import { PageNotFoundComponent } from './page-not-found-component';
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule, CommonModule, ReactiveFormsModule, HttpModule,
                     // RouterModule.forRoot([
@@ -38,7 +40,7 @@ import { routingComponents } from './app-routing.module';
   declarations: [ AppComponent, TutorialsComponent, TwoWayBindingComponent, AttrDirectivesComponent, InputsOutputsComponent, InputOutputChildComponent,
                   PipesComponent, DrivenFormsComponent, ModelDrivenFormsComponent, ServiceListComponent, ServiceListDetailComponent,
                   // RoutingAppComponent, DepartmentListComponent, EmployeeListComponent
-                 routingComponents, RoutingAppComponent ],
+                 routingComponents, RoutingAppComponent, PageNotFoundComponent ],
   bootstrap:    [ AppComponent ]
 })
 
